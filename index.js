@@ -13,5 +13,5 @@ function createPost() {
   let pageFn = _.template(pageTemplate)
   let pageHTML = pageFn({'post': templateHTML})
 
-  pageTemplate.innerHTML += templateHTML;
+  document.getElementsByTagName('main').innerHTML += pageHTML;
 }
