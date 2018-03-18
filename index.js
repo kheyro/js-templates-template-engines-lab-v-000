@@ -8,11 +8,9 @@ function createPost() {
   let pageTemplate = document.getElementById("page-template").innerHTML
 
   let templateFn = _.template(postTemplate);
-
   let templateHTML = templateFn({ 'postTitle': postTitle, 'postBody': postBody, 'postAuthor': postAuthor});
 
   let pageFn = _.template(pageTemplate)
-
   let commentFn = _.template(commentsTemplate)
 
   document.getElementsByTagName('main')[0].innerHTML += pageFn()
