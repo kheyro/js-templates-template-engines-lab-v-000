@@ -9,5 +9,7 @@ function createPost() {
 
   let templateFn = _.template(postTemplate);
 
-  
+  let templateHTML = templateFn({ 'postTitle': postTitle, 'postBody': postBody, 'postAuthor': postAuthor});
+
+
 }
