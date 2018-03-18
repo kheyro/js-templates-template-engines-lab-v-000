@@ -27,5 +27,7 @@ function postComment() {
 
   let templateFn = _.template(commentTemplate);
   let templateHTML = templateFn({ 'commentAuthor': commentAuthor, 'commentBody': commentBody});
-  
+
+  let commentsTemplate = document.getElementById("comments");
+  commentsTemplate.innerHTML += templateHTML
 }
