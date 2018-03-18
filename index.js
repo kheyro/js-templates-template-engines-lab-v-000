@@ -7,4 +7,7 @@ function createPost() {
   let postTemplate = document.getElementById("post-template").innerHTML
   let pageTemplate = document.getElementById("page-template").innerHTML
 
+  let templateFn = _.template(postTemplate);
+
+  
 }
