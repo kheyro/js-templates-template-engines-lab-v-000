@@ -16,7 +16,7 @@ function createPost() {
   document.getElementsByTagName('main')[0].innerHTML += pageFn()
   let post = document.getElementById('post')
   post.innerHTML = templateHTML
-  post.getElementsByTagName("footer")[0].innerHTML = commentFn;
+  post.getElementsByTagName("footer")[0].innerHTML += commentFn;
 }
 
 function postComment() {
