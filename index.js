@@ -2,7 +2,7 @@ function createPost() {
   let postTitle = document.getElementById("postTitle").value
   let postBody = document.getElementById("postBody").value
   let postAuthor = document.getElementById("postAuthor").value
-  
+
   let commentsTemplate = document.getElementById("comments-template").innerHTML
   let postTemplate = document.getElementById("post-template").innerHTML
   let pageTemplate = document.getElementById("page-template").innerHTML
@@ -12,7 +12,7 @@ function createPost() {
   let templateHTML = templateFn({ 'postTitle': postTitle, 'postBody': postBody, 'postAuthor': postAuthor});
 
   let pageFn = _.template(pageTemplate)
-  let pageHTML = pageFn({'post': templateHTML})
+  let pageHTML = pageFn() 
 
   document.getElementsByTagName('main')[0].innerHTML += pageHTML;
 }
