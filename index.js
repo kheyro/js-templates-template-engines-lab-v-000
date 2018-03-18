@@ -11,5 +11,5 @@ function createPost() {
 
   let templateHTML = templateFn({ 'postTitle': postTitle, 'postBody': postBody, 'postAuthor': postAuthor});
 
-  
+  pageTemplate.innerHTML += templateHTML;
 }
