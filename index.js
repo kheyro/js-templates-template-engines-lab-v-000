@@ -20,5 +20,5 @@ function createPost() {
 }
 
 function postComment() {
-
+  
 }
