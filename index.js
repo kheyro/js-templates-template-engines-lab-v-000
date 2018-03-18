@@ -15,3 +15,7 @@ function createPost() {
 
   document.getElementsByTagName('main').innerHTML += pageHTML;
 }
+
+function postComment() {
+  
+}
