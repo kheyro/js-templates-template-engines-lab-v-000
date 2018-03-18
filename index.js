@@ -14,8 +14,11 @@ function createPost() {
   let pageFn = _.template(pageTemplate)
   let post = document.getElementById('post')
 
-  document.getElementsByTagName('main')[0].innerHTML += pageFn()
+  let commentFn = _.template(commentsTemplate)
 
+  document.getElementsByTagName('main')[0].innerHTML += pageFn()
+  post.innerHTML = templateHTML
+  post.getElementsByTagName("footer")[0].innerHTML = commentsSection;
 }
 
 function postComment() {
