@@ -12,11 +12,11 @@ function createPost() {
   let templateHTML = templateFn({ 'postTitle': postTitle, 'postBody': postBody, 'postAuthor': postAuthor});
 
   let pageFn = _.template(pageTemplate)
-  let post = document.getElementById('post')
 
   let commentFn = _.template(commentsTemplate)
 
   document.getElementsByTagName('main')[0].innerHTML += pageFn()
+  let post = document.getElementById('post')
   post.innerHTML = templateHTML
   post.getElementsByTagName("footer")[0].innerHTML = commentFn;
 }
