@@ -21,7 +21,7 @@
 
       <script id="comments-template" type="text/x-lodash-template">
         <div id="comments"></div>
-        <form method="post" onsubmit="postComment()" id="post-form">
+        <form method="post" onsubmit="postComment();return false;" id="post-form">
           <input type="text" name="" id="commentAuthor" value="placeholder">
           <textarea name="" id="commentBody">test</textarea>
           <input type="submit">
