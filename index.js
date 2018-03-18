@@ -1,6 +1,9 @@
 function createPost() {
 
-  let page = document.getElementById("page-template").innerHTML
-  let post = document.getElementById("post-template").innerHTML
+  let postTitle = document.getElementById("postTitle").value
+  let postBody = document.getElementById("postBody").value
+  let postAuthor = document.getElementById("postAuthor").value
+
   
+
 }
