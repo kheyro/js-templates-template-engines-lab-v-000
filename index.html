@@ -6,8 +6,6 @@
   <body>
     <main>
 
-
-
       <form method="post" onsubmit="createPost()" id="post-form">
         <input type="text" name="" id="postTitle">
         <textarea name="" id="bodyTitle">
@@ -16,9 +14,9 @@
       </form>
 
       <script id="post-template" type="text/x-lodash-template">
-        <header></header>
-        <article></article>
-        <footer></footer>
+        <header><%= postTitle %></header>
+        <article><%= postBody %></article>
+        <footer><%= postAuthor %></footer>
       </script>
 
       <script id="page-template" type="text/x-lodash-template">
