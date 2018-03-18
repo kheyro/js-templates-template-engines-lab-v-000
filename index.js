@@ -12,9 +12,9 @@ function createPost() {
   let templateHTML = templateFn({ 'postTitle': postTitle, 'postBody': postBody, 'postAuthor': postAuthor});
 
   let pageFn = _.template(pageTemplate)
-  let pageHTML = pageFn() 
 
-  document.getElementsByTagName('main')[0].innerHTML += pageHTML;
+  document.getElementsByTagName('main')[0].innerHTML += pageFn()
+  
 }
 
 function postComment() {
