@@ -6,6 +6,24 @@
   <body>
     <main>
 
+      <script id="post-template" type="text/x-lodash-template">
+        <header><%= postTitle %></header>
+        <article><%= postBody %></article>
+        <footer><%= postAuthor %></footer>
+      </script>
+
+      <script id="page-template" type="text/x-lodash-template">
+        <sidebar>
+        </sidebar>
+        <post>
+          <%= post %>
+        </post>
+      </script>
+
+      <script id="comment-template" type="text/x-lodash-template">
+        <footer></footer>
+      </script>
+      
       <form method="post" onsubmit="createPost()" id="post-form">
         <input type="text" name="" id="postTitle">
         <textarea name="" id="bodyTitle">
@@ -13,7 +31,7 @@
         <input type="submit">
       </form>
 
-      
+
 
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
