@@ -18,7 +18,7 @@ function createPost() {
 
   document.getElementsByTagName('main')[0].innerHTML += pageFn()
   post.innerHTML = templateHTML
-  post.getElementsByTagName("footer")[0].innerHTML = commentsSection;
+  post.getElementsByTagName("footer")[0].innerHTML = commentFn;
 }
 
 function postComment() {
