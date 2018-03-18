@@ -22,6 +22,6 @@ function createPost() {
 function postComment() {
   let commentTemplate = document.getElementById("comment-template").innerHTML
 
-  let commentAuthor = document.getElementById("postTitle").value
-  let commentBody = document.getElementById("postBody").value
+  let commentAuthor = document.getElementById("commentAuthor").value
+  let commentBody = document.getElementById("commentBody").value
 }
