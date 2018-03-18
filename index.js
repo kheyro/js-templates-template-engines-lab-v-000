@@ -24,4 +24,8 @@ function postComment() {
 
   let commentAuthor = document.getElementById("commentAuthor").value
   let commentBody = document.getElementById("commentBody").value
+
+  let templateFn = _.template(commentTemplate);
+  let templateHTML = templateFn({ 'commentAuthor': commentAuthor, 'commentBody': commentBody});
+  
 }
