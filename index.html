@@ -22,18 +22,16 @@
 
       <script id="comments-template" type="text/x-lodash-template">
         <div id="comments"></div>
+        <form method="post" onsubmit="postComment()" id="post-form">
+          <input type="text" name="" id="commentAuthor" value="placeholder">
+          <textarea name="" id="commentBody">test</textarea>
+          <input type="submit">
+        </form>
       </script>
 
       <script id="comment-template" type="text/x-lodash-template">
         <footer></footer>
       </script>
-
-      <form method="post" onsubmit="createPost()" id="post-form">
-        <input type="text" name="" id="postTitle" value="placeholder">
-        <textarea name="" id="postBody">test</textarea>
-        <input type="text" name="" id="postAuthor" value="placeholder">
-        <input type="submit">
-      </form>
 
       <form method="post" onsubmit="createPost()" id="post-form">
         <input type="text" name="" id="postTitle" value="placeholder">
